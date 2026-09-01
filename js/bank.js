@@ -501,6 +501,11 @@
     }
   ];
 
+  // 合并扩充题库（bank-extra.js，第二批）
+  if (global.App && global.App.extraBank) {
+    QUESTIONS = QUESTIONS.concat(global.App.extraBank);
+  }
+
   // 工具：按 id 建索引、按分类取题
   var byId = {};
   var byCategory = {};
