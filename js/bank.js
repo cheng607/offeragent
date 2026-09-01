@@ -501,9 +501,13 @@
     }
   ];
 
-  // 合并扩充题库（bank-extra.js，第二批）
-  if (global.App && global.App.extraBank) {
-    QUESTIONS = QUESTIONS.concat(global.App.extraBank);
+  // 合并所有扩充题库（按加载顺序拼接；各扩充文件挂载到 global.App 的不同键上）
+  var EXTRA_BANKS = ['extraBank', 'fe2Bank', 'fe3Bank', 'aiBank1', 'aiBank2', 'aiBank3', 'aiBank4'];
+  for (var bi = 0; bi < EXTRA_BANKS.length; bi++) {
+    var extra = global.App && global.App[EXTRA_BANKS[bi]];
+    if (extra && extra.length) {
+      QUESTIONS = QUESTIONS.concat(extra);
+    }
   }
 
   // 工具：按 id 建索引、按分类取题
