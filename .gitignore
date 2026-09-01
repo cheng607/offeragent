@@ -1,0 +1,29 @@
+# 系统与编辑器
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# 依赖
+node_modules/
+package-lock.json
+
+# 构建产物
+dist/
+build/
+
+# 日志
+*.log
+npm-debug.log*
+
+# IDE
+.vscode/
+.idea/
+*.code-workspace
+
+# 本地学习数据备份（不进入仓库）
+*.offeragent-backup.json
+
+# 环境变量 / 密钥
+.env
+.env.*
