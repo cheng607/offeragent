@@ -1,0 +1,25 @@
+{
+  "name": "OfferAgent · 面试刷题记忆",
+  "short_name": "OfferAgent",
+  "description": "基于艾宾浩斯遗忘曲线的面试刷题记忆工具",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F7F5F0",
+  "theme_color": "#E4573D",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

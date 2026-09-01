@@ -1,97 +1,103 @@
 <!DOCTYPE html>
-<html lang="zh-CN" data-page-node-id="mEOFtnDvGsL5p1LExLEw8a">
-<head data-page-node-id="Zl3Y7VfNHiaRaqEuyP2cBH">
-  <meta charset="UTF-8" data-page-node-id="c5xB6OCF1yY4GyT1nn7AAC">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" data-page-node-id="yQEXkCGvnFKcmxFP253MYh">
-  <meta name="theme-color" content="#F7F5F0" data-page-node-id="98DJBe8yZp2KZqNSSyB0qI">
-  <meta name="description" content="OfferAgent · 基于艾宾浩斯遗忘曲线的面试刷题记忆工具" data-page-node-id="F8Wwv5tEjajnCQak9f0AIj">
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#E4573D">
+  <meta name="description" content="OfferAgent · 基于艾宾浩斯遗忘曲线的面试刷题记忆工具">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="OfferAgent">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="icon" href="icon-192.png" sizes="192x192">
   <title>OfferAgent · 面试刷题记忆</title>
-  <link rel="stylesheet" href="css/style.css" data-page-node-id="jshVYF982HIyBEO6uwW0LY">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body data-page-node-id="rOrHWcdMhz8euIlZgAestk">
-  <div id="app" class="app" data-page-node-id="c4vQJDq9UBAxfmaj811HD8">
+<body>
+  <div id="app" class="app">
 
     <!-- 顶部栏 -->
-    <header class="app-header" data-page-node-id="Q5xAHZEGueK4eBDDl6h18S">
-      <div class="header-brand" data-page-node-id="IrdMzT4CgOKYkS0kiEnk97">
-        <span class="logo-dot" aria-hidden="true" data-page-node-id="SfL1unZiDrI4BkaylWrwTJ"></span>
-        <span class="header-title" data-page-node-id="9DO7vS4dqQXLyFCOh6XatE">OfferAgent</span>
+    <header class="app-header">
+      <div class="header-brand">
+        <span class="logo-dot" aria-hidden="true"></span>
+        <span class="header-title">OfferAgent</span>
       </div>
-      <button class="icon-btn" id="btn-settings" aria-label="打开设置" data-page-node-id="l9H467l5ldmDXu9WU6xWCC">
-        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="n8hmlyW7HhFRRDeI23f0HM"><circle cx="12" cy="12" r="3" data-page-node-id="oaNREimPpYxACrdSQlAWpt"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" data-page-node-id="pHiLYEMYSMsp8X9Fm8RaVP"></path></svg>
+      <button class="icon-btn" id="btn-settings" aria-label="打开设置">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
       </button>
     </header>
 
     <!-- 主内容区 -->
-    <main class="app-main" id="app-main" data-page-node-id="DyT2dKQjCTEoSENpfsqAUU">
-      <section class="view is-active" id="view-home" data-view="home" data-page-node-id="st56cWPTZDovqrre68vpYH"></section>
-      <section class="view" id="view-practice" data-view="practice" data-page-node-id="V2NVvirQEnRdjoS5gDFVCK"></section>
-      <section class="view" id="view-bank" data-view="bank" data-page-node-id="fwe3rqJ82giDiuVf7CchQl"></section>
-      <section class="view" id="view-stats" data-view="stats" data-page-node-id="Ss4h3ipILDfM7UOmlhArmB"></section>
+    <main class="app-main" id="app-main">
+      <section class="view is-active" id="view-home" data-view="home"></section>
+      <section class="view" id="view-practice" data-view="practice"></section>
+      <section class="view" id="view-bank" data-view="bank"></section>
+      <section class="view" id="view-stats" data-view="stats"></section>
     </main>
 
     <!-- 底部导航 -->
-    <nav class="tabbar" aria-label="主导航" data-page-node-id="djuKefFlysYxtLQ9wPfsHk">
-      <button class="tab is-active" data-tab="home" data-page-node-id="OydUDAzbFNQqx2XtBE9rDZ">
-        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="1juPugPi9wph5QeTimV178"><path d="M3 9.5 12 2l9 7.5" data-page-node-id="xgDH3mHTewgAGFu4LBH8p8"></path><path d="M5 9.5V21a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5" data-page-node-id="5gMOfizYcb0dH7CCC98MvT"></path><path d="M9 22v-6h6v6" data-page-node-id="2kpYRHeNcB2Q14AgSTMHja"></path></svg>
-        <span data-page-node-id="ziyGDfdcpHemjTi4ACasaE">首页</span>
+    <nav class="tabbar" aria-label="主导航">
+      <button class="tab is-active" data-tab="home">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5 12 2l9 7.5"></path><path d="M5 9.5V21a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5"></path><path d="M9 22v-6h6v6"></path></svg>
+        <span>首页</span>
       </button>
-      <button class="tab" data-tab="practice" data-page-node-id="zwBKJifmKHOTIvmj2BKtCi">
-        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="X0yA0FK97MHGSwg4A9bFGL"><path d="m12 2 9 5-9 5-9-5 9-5z" data-page-node-id="b52zcZonvMTOXddCBq5D30"></path><path d="m3 12 9 5 9-5" data-page-node-id="PErOIAkHSwseHIewvDtFW0"></path><path d="m3 17 9 5 9-5" data-page-node-id="o2eDijViTz9GFRJsAy6ThA"></path></svg>
-        <span data-page-node-id="oH06lmSRZOcJuQFpyRelOx">刷题</span>
+      <button class="tab" data-tab="practice">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 9 5-9 5-9-5 9-5z"></path><path d="m3 12 9 5 9-5"></path><path d="m3 17 9 5 9-5"></path></svg>
+        <span>刷题</span>
       </button>
-      <button class="tab" data-tab="bank" data-page-node-id="evf9n2XrB4XiPjZcEcQljW">
-        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="YcvKglDzphsiw0KQARCpeo"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" data-page-node-id="dab06LWit0JWoaS1A0DPB8"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" data-page-node-id="1ynfvyJUbqHOv910SktB5I"></path></svg>
-        <span data-page-node-id="Om6GCT0EOHDFnj5FARGqVA">题库</span>
+      <button class="tab" data-tab="bank">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+        <span>题库</span>
       </button>
-      <button class="tab" data-tab="stats" data-page-node-id="MipCHfkHvmcJCs30qNAMQj">
-        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="10SVvWb20GyjhBuUqEd8DT"><path d="M3 3v18h18" data-page-node-id="GkfFFke6tCK1GXTNJBXGFy"></path><path d="M7 15v3" data-page-node-id="AzOcFWk7HR9cWpqi8BGWRP"></path><path d="M12 10v8" data-page-node-id="ggW60uBY8xtFAGPISVy3QT"></path><path d="M17 6v12" data-page-node-id="KtbZAIDkd81WRithVeWDbv"></path></svg>
-        <span data-page-node-id="izYJ7DeKK3dCIMMFvQgxyj">统计</span>
+      <button class="tab" data-tab="stats">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"></path><path d="M7 15v3"></path><path d="M12 10v8"></path><path d="M17 6v12"></path></svg>
+        <span>统计</span>
       </button>
     </nav>
 
     <!-- 设置弹窗 -->
-    <div class="modal-backdrop" id="settings-modal" hidden data-page-node-id="6PYocAPJA4MjHGzETmkrz4">
-      <div class="modal" role="dialog" aria-modal="true" aria-labelledby="settings-title" data-page-node-id="XvjGHwJaOBlAjwlV5jCAQE">
-        <div class="modal-head" data-page-node-id="TLOnYie4C75C2D1ACfJ6QY">
-          <h2 id="settings-title" data-page-node-id="wjiGqHuXaGxy1VyJAVta3V">设置</h2>
-          <button class="icon-btn" id="btn-close-settings" aria-label="关闭" data-page-node-id="Ev1JtUJCEBtp8mn1KeoYPA">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" data-page-node-id="E9mldc0Z05y3F1DIz1ilBx"><path d="M18 6 6 18M6 6l12 12" data-page-node-id="04xpUVemnoDFtZD7B35Sji"></path></svg>
+    <div class="modal-backdrop" id="settings-modal" hidden>
+      <div class="modal" role="dialog" aria-modal="true" aria-labelledby="settings-title">
+        <div class="modal-head">
+          <h2 id="settings-title">设置</h2>
+          <button class="icon-btn" id="btn-close-settings" aria-label="关闭">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"></path></svg>
           </button>
         </div>
-        <div class="modal-body" data-page-node-id="VD4hiAq5tw08MEKM2vGUsj">
-          <div class="form-block" data-page-node-id="pUh3lYqQDXxBMoZX5tv0ao">
-            <label class="field-label" for="set-new" data-page-node-id="JaPA6p4RUyBU0mydFbaJ7e">每日新题目标</label>
-            <input class="field-input" type="number" id="set-new" min="1" max="50" inputmode="numeric" data-page-node-id="U81J3cCf02BeQNpx2v34l0">
+        <div class="modal-body">
+          <div class="form-block">
+            <label class="field-label" for="set-new">每日新题目标</label>
+            <input class="field-input" type="number" id="set-new" min="1" max="50" inputmode="numeric">
           </div>
-          <div class="form-block" data-page-node-id="dQooZ2BHpfUAbsFYKIyUvo">
-            <label class="field-label" for="set-review" data-page-node-id="FK2nK3dYiDBKGNysl0jfWA">每日复习目标</label>
-            <input class="field-input" type="number" id="set-review" min="1" max="200" inputmode="numeric" data-page-node-id="JXCLODlvHt7B113XO3oVHE">
+          <div class="form-block">
+            <label class="field-label" for="set-review">每日复习目标</label>
+            <input class="field-input" type="number" id="set-review" min="1" max="200" inputmode="numeric">
           </div>
-          <div class="form-block" data-page-node-id="EhITDjDKKA2CDBzgRN5mgG">
-            <button class="btn btn-ghost" id="btn-export" data-page-node-id="73i3QWBdrVZyPHOkfdIGoT">导出学习数据</button>
-            <p class="field-hint" data-page-node-id="G1WACFCFNaCEYyQTN85uMF">备份为 JSON 文件，可随时导入恢复。</p>
+          <div class="form-block">
+            <button class="btn btn-ghost" id="btn-export">导出学习数据</button>
+            <p class="field-hint">备份为 JSON 文件，可随时导入恢复。</p>
           </div>
-          <div class="form-block" data-page-node-id="gGE3rzUqnXFjQ2KX0tOsqa">
-            <button class="btn btn-ghost" id="btn-import" data-page-node-id="BBw0ULeFozRMzBb6YdczNJ">导入学习数据</button>
-            <input type="file" id="file-import" accept="application/json,.json" hidden data-page-node-id="jcmqQThSK3RPyVmwYSnJ3z">
+          <div class="form-block">
+            <button class="btn btn-ghost" id="btn-import">导入学习数据</button>
+            <input type="file" id="file-import" accept="application/json,.json" hidden>
           </div>
-          <div class="form-block danger" data-page-node-id="0NF61o80kfxUS2C0TblMju">
-            <button class="btn btn-danger" id="btn-clear" data-page-node-id="ndcUzeGkvgHGrnGsouu9mE">清空学习数据</button>
+          <div class="form-block danger">
+            <button class="btn btn-danger" id="btn-clear">清空学习数据</button>
           </div>
-          <div class="about" data-page-node-id="c4xWUTJl1edmDJvECnCbYi">
-            <p data-page-node-id="tMo8Vov5YqbHqkKgkcLNMS">OfferAgent v1.0 · 基于艾宾浩斯遗忘曲线</p>
-            <p data-page-node-id="Z2wVJ2wquQ7J248lbqE1Yr">本地数据存储于浏览器，注意及时备份。</p>
+          <div class="about">
+            <p>OfferAgent v1.0 · 基于艾宾浩斯遗忘曲线</p>
+            <p>本地数据存储于浏览器，注意及时备份。</p>
           </div>
         </div>
-        <div class="modal-foot" data-page-node-id="B43CNfd5ZQ5oFHj2BDvmun">
-          <button class="btn btn-primary" id="btn-save-settings" data-page-node-id="RECHMB6fB9gepsFVfry63Z">保存</button>
+        <div class="modal-foot">
+          <button class="btn btn-primary" id="btn-save-settings">保存</button>
         </div>
       </div>
     </div>
 
     <!-- 轻提示 -->
-    <div class="toast" id="toast" hidden data-page-node-id="bi0BAydEDFTSF0erKEgsVz"></div>
+    <div class="toast" id="toast" hidden></div>
   </div>
 
   <!-- 脚本按依赖顺序加载 -->
@@ -102,5 +108,16 @@
   <script src="js/stats.js"></script>
   <script src="js/charts.js"></script>
   <script src="js/app.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('./sw.js').then(function (reg) {
+          console.log('[OfferAgent] SW registered:', reg.scope);
+        }).catch(function (err) {
+          console.warn('[OfferAgent] SW registration failed:', err);
+        });
+      });
+    }
+  </script>
 </body>
 </html>
