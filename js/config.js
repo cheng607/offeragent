@@ -45,6 +45,7 @@
       { id: 'database', name: '数据库', color: '#E0A22E' },
       { id: 'network',  name: '计算机网络', color: '#3E9B6F' },
       { id: 'os',       name: '操作系统', color: '#5C7CC0' },
+      { id: 'system-design', name: '系统设计', color: '#C05C8A' },
       { id: 'ai',       name: '人工智能', color: '#14B8A6' }
     ],
 

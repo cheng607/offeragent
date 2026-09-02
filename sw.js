@@ -3,7 +3,7 @@
  * 安装时缓存核心静态资源，采用 Cache-First 策略，支持离线访问。
  * 每次发布新版本时递增 CACHE_NAME。
  */
-var CACHE_NAME = 'offeragent-v5';
+var CACHE_NAME = 'offeragent-v6';
 var ASSETS = [
   './',
   './index.html',
@@ -12,15 +12,23 @@ var ASSETS = [
   './js/bank-extra.js',
   './js/bank-fe2.js',
   './js/bank-fe3.js',
+  './js/bank-fe4.js',
   './js/bank-ai1.js',
   './js/bank-ai2.js',
   './js/bank-ai3.js',
   './js/bank-ai4.js',
+  './js/bank-ai5.js',
   './js/bank-be2.js',
+  './js/bank-be3.js',
   './js/bank-al2.js',
+  './js/bank-al3.js',
   './js/bank-db2.js',
+  './js/bank-db3.js',
   './js/bank-net2.js',
+  './js/bank-net3.js',
   './js/bank-os2.js',
+  './js/bank-os3.js',
+  './js/bank-sd1.js',
   './js/bank.js',
   './js/storage.js',
   './js/scheduler.js',
