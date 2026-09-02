@@ -52,7 +52,8 @@
     DIFFICULTY: [
       { value: 1, label: '简单' },
       { value: 2, label: '中等' },
-      { value: 3, label: '困难' }
+      { value: 3, label: '困难' },
+      { value: 4, label: '专家' }
     ],
 
     // ---------- 统计窗口（天）----------

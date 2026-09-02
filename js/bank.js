@@ -502,7 +502,7 @@
   ];
 
   // 合并所有扩充题库（按加载顺序拼接；各扩充文件挂载到 global.App 的不同键上）
-  var EXTRA_BANKS = ['extraBank', 'fe2Bank', 'fe3Bank', 'aiBank1', 'aiBank2', 'aiBank3', 'aiBank4'];
+  var EXTRA_BANKS = ['extraBank', 'fe2Bank', 'fe3Bank', 'aiBank1', 'aiBank2', 'aiBank3', 'aiBank4', 'be2Bank', 'al2Bank', 'db2Bank', 'net2Bank', 'os2Bank'];
   for (var bi = 0; bi < EXTRA_BANKS.length; bi++) {
     var extra = global.App && global.App[EXTRA_BANKS[bi]];
     if (extra && extra.length) {

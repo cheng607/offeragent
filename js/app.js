@@ -208,7 +208,7 @@
             '<div class="flip-face flip-front">' +
               '<div class="card-meta">' + catBadge(q.category) + diffBadge(q.difficulty) + '</div>' +
               '<div class="card-question">' + esc(q.question) + '</div>' +
-              '<div class="card-hint">' + icon('eye', 18) + '点击卡片查看答案</div>' +
+              '<div class="card-hint">' + icon('eye', 18) + '点击卡片查看答案 · 再次点击返回题目</div>' +
             '</div>' +
             '<div class="flip-face flip-back">' +
               '<div class="answer-title">答案解析</div>' +
@@ -229,11 +229,14 @@
       var self = this;
       var flipCard = $('#flip-card');
       var ratingBtns = $$('.rate-btn', $('#view-practice'));
+      var revealed = false;
 
       flipCard.addEventListener('click', function () {
-        if (flipCard.classList.contains('flipped')) return;
-        flipCard.classList.add('flipped');
-        ratingBtns.forEach(function (b) { b.disabled = false; });
+        var flipped = flipCard.classList.toggle('flipped');
+        if (flipped) revealed = true;
+        if (revealed) {
+          ratingBtns.forEach(function (b) { b.disabled = false; });
+        }
       });
 
       ratingBtns.forEach(function (b) {
